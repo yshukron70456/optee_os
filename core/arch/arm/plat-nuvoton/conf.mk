@@ -18,6 +18,9 @@ $(call force,CFG_EXTERNAL_DT,n)
 
 CFG_WITH_STATS ?= y
 
+# Hand BL31's watchdog interrupts, taken while OP-TEE runs, back to BL31
+CFG_NPCM_WDG_FWD ?= y
+
 # To enable version printing with color in main
 CFG_NPCM_DEBUG ?= n
 
